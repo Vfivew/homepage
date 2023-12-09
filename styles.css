@@ -181,6 +181,7 @@ body {
 }
 
 .experiences__header {
+  text-decoration: underline;
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
@@ -239,6 +240,7 @@ body {
 }
 
 .additional-info__education-header {
+  text-decoration: underline;
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
@@ -266,6 +268,7 @@ body {
 }
 
 .additional-info__languages-header {
+  text-decoration: underline;
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
@@ -280,6 +283,7 @@ body {
 }
 
 .additional-info__hobby-header {
+  text-decoration: underline;
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
@@ -301,6 +305,7 @@ body {
 }
 
 .additional-info__plans-header {
+  text-decoration: underline;
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
