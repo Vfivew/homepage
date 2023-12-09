@@ -268,3 +268,25 @@ body {
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
+
+.additional-info__hobby {
+  margin-bottom: 20px;
+}
+
+.additional-info__hobby-header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.additional-info__hobby-description {
+  color: var(--durability-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.additional-info__hobby-name {
+  color: var(--secondary-text-color);
+}
+                
