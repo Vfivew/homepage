@@ -223,6 +223,13 @@ body {
   padding-left: 20px;
 }
 
+.experiences__company-durability{
+  color: var(--durability-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
 .additional-info {
   flex: 1 1 40%;
 }
@@ -286,6 +293,20 @@ body {
 }
 
 .additional-info__hobby-name {
+  color: var(--secondary-text-color);
+}
+
+.additional-info__plans {
+  margin-bottom: 20px;
+}
+
+.additional-info__plans-header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.additional-info__plans-item {
   color: var(--secondary-text-color);
 }
                 
