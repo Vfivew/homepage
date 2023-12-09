@@ -11,10 +11,12 @@ body {
   line-height: 1.5;
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
+  --body-color: #ffffff;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --shadow-color:#d0cdcd;
   background: linear-gradient(45deg, var(--text-decoration-color), #ffffff, var(--text-decoration-color));
   background-size: 400% 500%;
   animation: gradientAnimation 10s ease infinite;
@@ -52,11 +54,11 @@ body {
 
 .resume {
   margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #c2c1c1;
+  border: 1px solid var(--body-color);
+  box-shadow: 1px 1px 7px 7px var(--shadow-color);
   padding: 30px 0;
   max-width: 900px;
-  background-color: white;
+  background-color: var(--body-color);
 }
 
 .resume__block {
@@ -356,3 +358,39 @@ body {
   color: var(--secondary-text-color);
 }
                 
+/*Dark mode*/
+.theme-switch{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.theme-switch-btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color:var(--primary-text-color);
+  color: var(--body-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.7s, color 0.7s;
+  border-radius:16px
+}
+
+.dark-mode .theme-switch-btn {
+  background-color: var(--primary-text-color);
+  color:var(--body-color);
+}
+
+.dark-mode {
+  --primary-text-color: #fff;
+  --secondary-text-color: #ccc;
+  --durability-text-color: #a0a0a0;
+  --icon-color: #a0a0a0;
+  --border-color:  #ff9a00;
+  --text-decoration-color: #ff9a00;
+  --shadow-color:#4d4127;
+  --body-color: black;
+  background: linear-gradient(45deg, #292929, #5c3801f2, #292929);
+  background-size: 400% 500%;
+  color: #fff;
+}
