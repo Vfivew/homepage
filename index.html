@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Résumé</title>
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+</head>
+
+<body>
+    <main>
+        <div class="theme-switch">
+            <button class="theme-switch-btn">Dark Mode</button>
+        </div>
+        <div class="resume">
+            <div class="container">
+                <div class="resume__block">
+                    <h1 class="contact-info__header">Vlad Manukian</h1>
+                    <h3 class="contact-info__sub-header">Full Stack Development Student</h3>
+
+                    <div class="contact_info_container fh">
+                        <div class="contact-info__block">
+                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Birthday&dates=19971011T000000Z/19971011T235959Z"
+                                rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="contact-info__item-icon" height="16"
+                                        width="14" viewBox="0 0 448 512">
+                                        <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 
+                                        128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 
+                                        128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 
+                                        24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                    </svg>
+                                </div>
+                                <span>11.10.1997</span>
+                            </a>
+                            <a href="https://www.google.com/maps/place/Chernivtsi" rel="author"
+                                class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192
+                                        0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+                                        13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+                                        80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                                    </svg>
+                                </div>
+                                <span>Chernivtsi, Ukraine</span>
+                            </a>
+                            <a href="https://web-portfolio-teal.vercel.app/" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" height="16"
+                                        width="16" viewBox="0 0 512 512">
+                                        <path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 
+                                        0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 
+                                        0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 
+                                        35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                                    </svg>
+                                </div>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+                        <div class="contact-info__block contact-info__block--center">
+                            <img class="contact-info__avatar" title="Try to guess where this photo was taken xD"
+                                src="assets/photo.jpg" alt="Avatar" />
+                        </div>
+
+                        <div class="contact-info__block">
+                            <a href="https://www.yahoo.com/" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" height="16"
+                                        width="16" viewBox="0 0 512 512">
+                                        <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 
+                                        150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 
+                                        16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 
+                                        28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 
+                                        0-64-28.7-64-64V128z" />
+                                    </svg>
+                                </div>
+                                <span>vvorldvlad@yahoo.com</span>
+                            </a>
+                            <a href="tel:+38066545654" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" width="36"
+                                        height="36" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M6 2h12a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 
+                                        1 1-1Zm6 15a1 1 0 1 0 0 2a1 1 0 0 0 0-2Z" />
+                                    </svg>
+                                </div>
+                                <span>+380 66 54 56 54</span>
+                            </a>
+                            <a href="https://www.instagram.com/vladmanukian/" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" height="16"
+                                        width="14" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 
+                                        339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 
+                                        74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 
+                                        26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 
+                                        27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+                                        0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 
+                                        9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 
+                                        26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 
+                                        42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+                                        9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 
+                                        34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </div>
+                                <span>VladManukain</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="intro">
+                        <div class="intro__icon-wrapper">
+                            <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+                                24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+                                26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                                48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+                                64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
+                                32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                                48-48V304c0-26.5-21.5-48-48-48z"></path>
+                            </svg>
+                        </div>
+                        <p class="intro_text">
+                            "My name is Vlad, and I am studying to become a full-stack developer. Currently, I am
+                            refining my skills by working on
+                            pet projects. I kicked off an infinite learning loop in my mind and hope I can avoid
+                            encountering a stack overflow
+                            error. Even in strict mode, I remain kind."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="skills">
+                        <h3 class="skills__header">Skills</h3>
+                        <p class="skills__text">
+                            Punctuality, organization, quick learning, problem solving, listening and receivin feedback,
+                            chocolate devourer.
+                        </p>
+                    </div>
+                    <div class="skills__tooltip">
+                        <canvas id="skillsChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="main-info fh">
+                        <div class="experiences">
+                            <h3 class="experiences__header">Experience</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-durability">Jan 2018 - May 2018</span><br />
+                                    <span class="experiences__company-project-role">Operator</span>
+                                    <h3 class="experiences__company-project-name">LLC ROMA, Chernivtsi</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Invoice processing</li>
+                                        <li>Communication with forwarder</li>
+                                        <li>Working with sales agents</li>
+                                    </ul>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-durability">Feb 2019 - Jun 2021</span><br />
+                                    <span class="experiences__company-project-role">Senior Inspector in the Department
+                                        of
+                                        Operational Duty, Communication, and
+                                        Notification of the Civil Protection Department
+                                        of the Chernivtsi Regional State Administration</span>
+                                    <h3 class="experiences__company-project-name">Chernivtsi Regional State
+                                        Administration</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Document handling</li>
+                                        <li>Data collection and summarization</li>
+                                        <li>Development of plans and projects in the field of CP</li>
+                                    </ul>
+                                </div>
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-durability">Feb 2022 - Jun 2023
+                                    </span><br />
+                                    <span class="experiences__company-project-role">Warehouse picker/packer</span>
+                                    <h3 class="experiences__company-project-name">Art'o'food, Chernivtsi</h3>
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Order collection</li>
+                                        <li>Inventory management</li>
+                                        <li>Monitoring merchandise turnover</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additional-info fv">
+                            <div class="additional-info fv">
+                                <div class="additional-info__education">
+                                    <h3 class="additional-info__education-header">Education</h3>
+                                    <div class="additional-info__education-university">
+                                        <span class="additional-info__education-university-durability"> Sep 2015 - Dec
+                                            2021</span>
+                                        <h3 class="additional-info__education-university-speciality">
+                                            Master Degree
+                                        </h3>
+                                        <p class="additional-info__education-university-name">
+                                            Yuriy Fedkovych Chernivtsi National University, Chernivtsi, Faculty of
+                                            Geography, specialize "Hydrometeorology"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="additional-info__hobby">
+                                    <h3 class="additional-info__hobby-header">Hobby</h3>
+                                    <div class="additional-info__hobby-block">
+                                        <ul class="additional-info__hobby-name">
+                                            <li>Playing guitar</li>
+                                            <li>Rollerblading</li>
+                                            <li>Snowboarding</li>
+                                        </ul>
+                                        <span class="additional-info__hobby-description">Sometimes it
+                                            seems that the last two on the list could be replaced with 'Enjoy
+                                            falling' or 'Love to pretend to be a bowling ball.'</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info__plans">
+                                    <h3 class="additional-info__plans-header">Plans</h3>
+                                    <ul>
+                                        <li class="additional-info__plans-item">Obtain experience in teamwork</li>
+                                        <li class="additional-info__plans-item">Learning and completing Binary Academ
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="additional-info__languages">
+                                    <h3 class="additional-info__languages-header">Languages</h3>
+                                    <ul>
+                                        <li class="additional-info__languages-item">
+                                            Ukrainian - fluent
+                                        </li>
+                                        <li class="additional-info__languages-item">
+                                            English - B2 level (hopefully)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chartSkills.js"></script>
+    <script src="js/darkMode.js"></script>
+</body>
+
 </html>
