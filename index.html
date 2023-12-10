@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="resume__block">
                     <h1 class="contact-info__header">Vlad Manukian</h1>
-                    <h3 class="contact-info__sub-header">Full Stack Development Student</h3>
+                    <h3 class="contact-info__sub-header animated-text">Full Stack Development Student</h3>
 
                     <div class="contact_info_container fh">
                         <div class="contact-info__block">
@@ -115,6 +115,11 @@
             <div class="container">
                 <div class="resume__block">
                     <div class="intro">
+                        <div class="animated-image" id="animatedImage">
+                            <a href="https://www.instagram.com/binarystudiocat/" target="_blank">
+                                <img class="contact-info__avatar hidden" src="/homepage/assets/Bulka.jpg" alt="Animated Image" id="animatedImg" />
+                            </a>
+                        </div>
                         <div class="intro__icon-wrapper">
                             <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
@@ -147,6 +152,28 @@
                     </div>
                     <div class="skills__tooltip">
                         <canvas id="skillsChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="resume__block">
+                    <div class="hard__skills">
+                        <h3 class="skills__header">Hard skills</h3>
+                        <ul class="skills__list">
+                            <li class="skills__item">React,</li>
+                            <li class="skills__item">Redux,</li>
+                            <li class="skills__item">ReactRouter,</li>
+                            <li class="skills__item">JavaScript,</li>
+                            <li class="skills__item">TypeScript,</li>
+                            <li class="skills__item">HTML,</li>
+                            <li class="skills__item">CSS,</li>
+                            <li class="skills__item">SCSS,</li>
+                            <li class="skills__item">RTK Query,</li>
+                            <li class="skills__item">Webpack,</li>
+                            <li class="skills__item">MongoDB,</li>
+                            <li class="skills__item">Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="hard__skills__tooltip">
+                        <canvas id="hardSkillsChart" width="300" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -251,7 +278,9 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chartSkills.js"></script>
+    <script src="js/chartHardSkills.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/bulka.js"></script>
 </body>
 
 </html>
