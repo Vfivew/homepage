@@ -9,30 +9,34 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
-  --body-color: #ffffff;
+  --body-color: #fff;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
   --shadow-color:#d0cdcd;
-  background: linear-gradient(45deg, var(--text-decoration-color), #ffffff, var(--text-decoration-color));
+
+  background: linear-gradient(45deg, var(--text-decoration-color), #fff, var(--text-decoration-color));
   background-size: 400% 500%;
   animation: gradientAnimation 10s ease infinite;
 }
 
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -68,7 +72,7 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (width <= 576px) {
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -87,7 +91,7 @@ body {
   }
 }
 
-/*Contact info styles*/
+/* Contact info styles */
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -121,6 +125,7 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  transition: color 0.3s ease;
 }
 
 .contact-info__item:hover{
@@ -167,6 +172,7 @@ body {
   from {
       width: 0;
   }
+
   to {
       width: 100%;
   }
@@ -323,6 +329,42 @@ body {
   font-size: 15px;
 }
 
+.experiences__web{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items:center
+}
+
+.experiences__web-list {
+  color: var(--secondary-text-color);
+  padding-left: 20px;
+  text-align: left;
+}
+
+.experiences__web-time {
+  color: var(--durability-text-color);
+  margin-bottom: 10px;
+  font-size: 15px;
+  list-style: none;
+}
+
+.experiences__web-list-item{
+  margin: 4px 0 8px;
+}
+
+.experiences__web-link {
+  text-decoration: none; 
+  color: var(--primary-text-color); 
+  font-weight: 600;
+  transition: color 0.4s ease;
+}
+
+.experiences__web-link:hover {
+  color: var(--text-decoration-color);
+}
+
 .additional-info {
   flex: 1 1 40%;
 }
@@ -407,13 +449,15 @@ body {
   color: var(--secondary-text-color);
 }
                 
-/*Dark mode*/
+/* Dark mode */
+
 .theme-switch{
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 20px;
 }
+
 .theme-switch-btn {
   padding: 10px 20px;
   font-weight: bold;
@@ -439,14 +483,15 @@ body {
   --text-decoration-color: #ff9a00;
   --shadow-color:#4d4127;
   --body-color: black;
+  
   background: linear-gradient(45deg, #292929, #5c3801f2, #292929);
   background-size: 400% 500%;
   color: #fff;
 }
 
-/*Bulka lies on Resume*/
+/* Bulka lies on Resume */
 
-#animatedImg {
+#animated-img {
   position: fixed;
 }
 
