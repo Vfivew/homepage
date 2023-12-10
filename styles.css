@@ -156,6 +156,22 @@ body {
   border-color: var(--text-decoration-color);
 }
 
+.contact-info__sub-header {
+  overflow: hidden;
+  white-space: nowrap; 
+  color: var(--secondary-text-color); 
+  animation: typing 3s steps(30, end) forwards; 
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
 /* Intro and skills styles */
 
 .intro {
@@ -192,7 +208,7 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: center;
 }
 
 .skills__tooltip {
@@ -208,6 +224,39 @@ body {
 }
 
 .skills__tooltip.active {
+  opacity: 1;
+  transform: translateX(100%);
+  transform: translateY(12%);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.skills__list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.skills__item{
+  color: var(--secondary-text-color);
+  margin: 0 4px;
+}
+
+.hard__skills__tooltip {
+  background-color:white;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  opacity: 0;
+  transform: translateX(-10%);
+  transform: translateY(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.hard__skills__tooltip.active {
   opacity: 1;
   transform: translateX(100%);
   transform: translateY(12%);
@@ -393,4 +442,21 @@ body {
   background: linear-gradient(45deg, #292929, #5c3801f2, #292929);
   background-size: 400% 500%;
   color: #fff;
+}
+
+/*Bulka lies on Resume*/
+
+#animatedImg {
+  position: fixed;
+}
+
+.hidden {
+  opacity: 0;
+  transition:  opacity 1s ease; 
+}
+
+.visible {
+  transition: opacity 2s ease; 
+  opacity: 1;
+  z-index: 1;
 }
